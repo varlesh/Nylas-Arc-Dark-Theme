@@ -7,7 +7,7 @@
 # Install
 ```
 git clone https://github.com/varlesh/Nylas-Arc-Dark-Theme.git
-mv -R Nylas-Arc-Dark-Theme ~/.nylas/packages/
+mv Nylas-Arc-Dark-Theme ~/.nylas/packages/
 ```
 
 # For KDE
