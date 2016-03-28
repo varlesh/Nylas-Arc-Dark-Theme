@@ -1,5 +1,6 @@
 # Nylas Arc Dark Theme
 
+Arc Dark theme for mail client [Nylas N1](https://github.com/nylas/N1)
 
 ![Screenshot](preview.png)
 
