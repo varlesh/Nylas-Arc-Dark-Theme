@@ -1,0 +1,13 @@
+{
+  "name": "arc-dark",
+  "displayName": "Arc Dark",
+  "theme": "ui",
+  "version": "0.1.0",
+  "description": "The Arc Dark N1 Client Theme",
+  "license": "GPL-3.0",
+  "engines": {
+    "nylas": "*"
+  },
+  "styleSheets": ["email-frame"],
+  "private": true
+}

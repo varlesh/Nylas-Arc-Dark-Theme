@@ -1,0 +1,97 @@
+@arc-grey:         #404552;
+@arc-dark-grey:    #2F343F;
+@arc-light-grey:   #414857;
+@arc-border:       #272C35;
+@arc-select:       #5294E2;
+
+///PANEL
+@panel-background-color:         #353945;
+@source-list-bg:                 @panel-background-color;
+@source-list-active-bg:          @panel-background-color;
+@source-list-active-color:       @arc-select;
+
+/// MENU
+@menu-divider-color: @arc-dark-grey;
+@menu-item-color-hover: @arc-light-grey;
+@menu-item-color-selected: @arc-select;
+@menu-text-color-selected: #FFFFFF;
+
+///BACKGROUND FONT MESSAGES
+@background-primary:     @arc-grey;
+@background-off-primary: @arc-grey;
+
+///BACKGROUND MESSAGES AND TOOLBAR
+@background-secondary:   @arc-dark-grey;
+@background-tertiary:    @arc-dark-grey;
+
+///BORDERS
+@list-border:            @arc-border;
+@border-color-primary:   @arc-border;
+@border-color-secondary: @arc-border;
+@border-color-tertiary:  @arc-border;
+@border-color-divider:   @arc-border;
+
+///TEXT COLORS
+@text-color:         #FFFFFF;
+@text-color-inverse: #FFFFFF;
+@text-color-alert:  #E64D65;
+@text-color-heading: #FFFFFF;
+@text-color-link:        @arc-select;
+@text-color-link-hover:  #4877B1;
+@text-color-link-active: #4877B1;
+
+///SELECTION
+@accent-primary:         #3D94E3;
+@accent-primary-dark:    @arc-select;
+@accent-secondary:       #4A7AB4;
+
+///HILIGHT
+@list-bg:                @arc-light-grey;
+
+///TOOLBAR, SEARCH, BUTTONS
+@toolbar-background-color: @arc-dark-grey;
+.sheet-toolbar {
+  border-bottom: 1px solid @list-border !important;
+  .sheet-toolbar-container {
+    background: @arc-dark-grey;
+  }
+  .btn-toolbar {
+    background: @arc-light-grey;
+    border: 1px solid @list-border !important;
+    box-shadow: none;
+  }
+  .search-bar .menu .header-container input {
+    background: @arc-light-grey;
+    border: 1px solid @list-border !important;
+    box-shadow: none;
+  }
+}
+
+///UNFOCUSED
+body.is-blurred {
+  .sheet-toolbar-container {
+    background: @arc-dark-grey;
+    .btn.btn-toolbar {
+      background: @arc-light-grey;
+      box-shadow: none;
+    }
+  }
+  .search-bar .menu .header-container input {
+    background: @arc-light-grey;
+    box-shadow: none;
+  }
+  .list-container .list-item.focused {
+    background: #4877B1;
+    color:      #FFFFFF;
+  }
+}
+
+///NORMAL
+body {
+  .list-container .list-item.focused {
+    background: @arc-select;
+    color:      #FFFFFF;
+  }
+}
+
+
