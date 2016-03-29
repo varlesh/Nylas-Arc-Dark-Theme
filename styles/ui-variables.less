@@ -1,8 +1,11 @@
-@arc-grey:         #404552;
-@arc-dark-grey:    #2F343F;
-@arc-light-grey:   #414857;
-@arc-border:       #272C35;
-@arc-select:       #5294E2;
+@arc-grey:              #404552;
+@arc-dark-grey:         #2F343F;
+@arc-light-grey:        #414857;
+@arc-border:            #272C35;
+@arc-hover:             #505766;
+@arc-select:            #5294E2;
+@arc-select-unfocused:  #4877B1;
+@white:                 #FFFFFF;
 
 ///PANEL
 @panel-background-color:         #353945;
@@ -14,7 +17,7 @@
 @menu-divider-color: @arc-dark-grey;
 @menu-item-color-hover: @arc-light-grey;
 @menu-item-color-selected: @arc-select;
-@menu-text-color-selected: #FFFFFF;
+@menu-text-color-selected: @white;
 
 ///BACKGROUND FONT MESSAGES
 @background-primary:     @arc-grey;
@@ -32,13 +35,13 @@
 @border-color-divider:   @arc-border;
 
 ///TEXT COLORS
-@text-color:         #FFFFFF;
-@text-color-inverse: #FFFFFF;
+@text-color:         @white;
+@text-color-inverse: @white;
 @text-color-alert:  #E64D65;
-@text-color-heading: #FFFFFF;
+@text-color-heading: @white;
 @text-color-link:        @arc-select;
-@text-color-link-hover:  #4877B1;
-@text-color-link-active: #4877B1;
+@text-color-link-hover:  @arc-select-unfocused;
+@text-color-link-active: @arc-select-unfocused;
 
 ///SELECTION
 @accent-primary:         #3D94E3;
@@ -46,7 +49,7 @@
 @accent-secondary:       #4A7AB4;
 
 ///HILIGHT
-@list-bg:                #505766;
+@list-bg:                @arc-hover;
 
 ///TOOLBAR, SEARCH, BUTTONS
 @toolbar-background-color: @arc-dark-grey;
@@ -59,16 +62,17 @@
     background: @arc-light-grey;
     border: 1px solid @list-border !important;
     box-shadow: none;
-  }
+     &:hover {
+      background: @arc-hover;
+      }
+     &:active {
+      background: @arc-select;
+     }  
+}
   .search-bar .menu .header-container input {
     background: @arc-light-grey;
     border: 1px solid @list-border !important;
     box-shadow: none;
-  }
-  .btn-toolbar, .sheet-toolbar .btn-toolbar {
-    &:hover {
-      background: #505766;
-  }
  }
 }
 
@@ -86,8 +90,8 @@ body.is-blurred {
     box-shadow: none;
   }
   .list-container .list-item.focused {
-    background: #4877B1;
-    color:      #FFFFFF;
+    background: @arc-select-unfocused;
+    color:      @white;
   }
 }
 
@@ -95,7 +99,7 @@ body.is-blurred {
 body {
   .list-container .list-item.focused {
     background: @arc-select;
-    color:      #FFFFFF;
+    color:      @white;
   }
 }
 
@@ -108,8 +112,12 @@ body {
     border: none;
     background: #737985;
      &:hover {
-       background: @arc-select;
+       background: #737985;
        border: none;
     }
+     &:active {
+      background: @arc-select;
+      border: none;
+     }
   }
 }
