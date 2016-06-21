@@ -122,4 +122,32 @@ body {
   }
 }
 
+.thread-list .list-item .list-column-HoverActions .action.action-archive {
+    background: url("../static/images/thread-list-quick-actions/ic-quick-button-archive@2x.png") center no-repeat, linear-gradient(to top, rgb(37, 143, 225) 0%, rgb(37, 143, 225) 100%);
+}
+.thread-list .list-item .list-column-HoverActions .action.action-trash {
+    background: url("../static/images/thread-list-quick-actions/ic-quick-button-trash@2x.png") center no-repeat, linear-gradient(to top, rgb(37, 143, 225) 0%, rgb(37, 143, 225) 100%);
+}
+.thread-list .list-item .list-column-HoverActions .action.action-snooze {
+    background: url("../static/images/thread-list-quick-actions/ic-quickaction-snooze@2x.png") center no-repeat, linear-gradient(to top, rgb(37, 143, 225) 0%, rgb(37, 143, 225) 100%);
+}
+.thread-injected-mail-labels {
+.removable {
+    color: @white !important;
+    background-color: @arc-light-grey !important;
+    border: 1px solid @list-border !important;
+    background-image: none !important;
+    box-shadow: none !important;
+     &:hover {
+      background: @arc-hover !important;
+      }
+     &:active {
+      background: @arc-select !important;
+    }
+  }
+}
+.thread-injected-mail-labels  .mail-label  img {
+
+    background-color: rgb(213, 214, 216) !important;
+}
 @import 'preferences';
